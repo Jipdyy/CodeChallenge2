@@ -1,10 +1,6 @@
 <?php 
     $x = isset($_POST['x']) ? $_POST['x'] : null;
     function isPalindrome(int $x) {
-        if (!is_numeric($x) || strpos($x, '.') !== false) {
-            return false;
-        }
-
         $strNum = strval($x);
         $reversed = strrev($x);
         return $strNum === $reversed;
